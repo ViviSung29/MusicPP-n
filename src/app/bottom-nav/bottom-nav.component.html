@@ -1,0 +1,8 @@
+<router-outlet></router-outlet>
+<ul class="bottom-nav">
+  <li><a [routerLink]="['home']"  routerLinkActive="cur"   ><i class="fa fa-dot-circle-o"></i> 发现</a></li>
+  <li><a [routerLink]="['my-music']"   routerLinkActive="cur"  ><i class="fa fa-music" ></i> 我的音乐</a></li>
+  <li class="record"><div class="progress"><div class="wrapper right"><div class="circleProgress rightcircle"></div></div> <div class="wrapper left"><div class="circleProgress leftcircle"></div></div></div><a [routerLink]="['cur-music']" class="rotate"  ></a></li>
+  <li><a [routerLink]="['dynamic']"   routerLinkActive="cur"  ><i  class="fa fa-smile-o" aria-hidden="true"></i> 动态</a></li>
+  <li><a [routerLink]="['account']"  routerLinkActive="cur" ><i class="fa fa-user" aria-hidden="true"></i> 账户</a></li>
+</ul>

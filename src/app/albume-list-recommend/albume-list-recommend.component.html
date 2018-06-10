@@ -1,0 +1,15 @@
+<div class="album-list-recommend-box" id="album-list-recommend-box">
+  <div class="album-list-box">
+    <ul class="album-list">
+      <li *ngFor=" let album of albums">
+        <a href='{{ album.link }}' target="_blank">
+          <img src='{{ album.imgsrc }}' border="0" >
+          <div class="detail">
+            <span class="">#{{ album.tip}}</span>
+            {{ album.msg}}
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
